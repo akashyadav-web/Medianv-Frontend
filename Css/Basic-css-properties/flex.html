@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    /* Main Container */
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    /* Cards */
+    .card {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: gray;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MyLogo</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <!-- Flexbox Cards -->
+  <div class="container">
+    <div class="card">
+      <h2>Card One</h2>
+      <p>This is a flexbox card.</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h2>Card Two</h2>
+      <p>Cards are aligned using Flexbox.</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h2>Card Three</h2>
+      <p>Responsive and clean layout.</p>
+      <button>Read More</button>
+    </div>
+  </div>
+
+</body>
+</html>

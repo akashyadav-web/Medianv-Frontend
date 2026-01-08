@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor eCall</title>
+  </head>
+  <body>
+    <h1>Book Appointment</h1>
+
+    <form id="ecallForm">
+      <label>Name</label>
+      <input type="text" name="name" />
+      <br /><br />
+
+      <label>Email</label>
+      <input type="email" name="email" />
+      <br /><br />
+
+      <label>Phone Number</label>
+      <input type="tel" name="phno" />
+      <br /><br />
+
+      <label>Appointment Date</label>
+      <input type="date" name="date" />
+      <br /><br />
+
+      <label>Appointment Time</label>
+      <input type="time" name="time" />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("ecallForm");
+
+      function handleFormSubmit(e) {
+        e.preventDefault();
+
+        const patientName = e.target.name.value;
+        const email = e.target.email.value;
+        const phone = e.target.phno.value;
+        const date = e.target.date.value;
+        const time = e.target.time.value;
+
+        console.log("Patient Details:");
+        console.log("Name:", patientName);
+        console.log("Email:", email);
+        console.log("Phone:", phone);
+        console.log("Date:", date);
+        console.log("Time:", time);
+      }
+
+      form.addEventListener("submit", handleFormSubmit);
+    </script>
+  </body>
+</html>
