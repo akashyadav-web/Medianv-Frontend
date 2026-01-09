@@ -1,0 +1,36 @@
+/* components/Users/AddUser.css */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds space between each form element */
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 5px; /* Adds spacing between the label and input */
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px; /* Adds spacing above the button */
+}
+
+button:hover {
+  background-color: #45a049;
+}
